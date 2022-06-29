@@ -1,0 +1,2 @@
+# nishinonanasezz.github.io
+blog
