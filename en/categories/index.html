@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://nishinonanasezz.github.io/en/categories/'>
 
-<link rel="stylesheet" href="/scss/style.min.9fa7276c4a81c87194b1fd043c147805b2dd16af69d1ce89119397f8032a2815.css"><meta property='og:title' content="Categories">
+<link rel="stylesheet" href="/scss/style.min.8c7adbc1c93b89fc8f623616c1ea8f898cc9175cbe18c30c14f8499b0dbd8340.css"><meta property='og:title' content="Categories">
 <meta property='og:description' content="日上三竿不觉醒， 天天梦里乐陶陶~~">
 <meta property='og:url' content='https://nishinonanasezz.github.io/en/categories/'>
 <meta property='og:site_name' content='nishinonanasezz'>
@@ -220,38 +220,43 @@
     }());
 </script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-    
-    
+<div id="musicContainer"></div>
+<script>
+    const home = "https://nishinonanasezz.github.io/en/"; 
+    console.info('wakuwaku');
+    const musicArray = [
+        {
+            name: '退后',
+            artist: 'jachou',
+            url: home + 'music/退后/退后.mp3',
+            cover: home + 'music/退后/cover.jpg',
+            lrc: home + 'music/退后/tuihou.lrc'
+        }]
+      const ap = new APlayer({
+        container: document.getElementById("musicContainer"),
+        fixed: true,
+        theme: "#08a365",
+        listMaxHeight: 90,
+        lrcType: 3,
+        audio: musicArray
+      });
+      
+</script>
 
 
-    <div id="musicContainer"></div>
-    <script>
-        const home = "https://nishinonanasezz.github.io/en/"; 
-        console.log(home);
-        const musicArray = [
-            {
-                name: '退后',
-                artist: 'jachou',
-                url: home + 'music/退后/退后.mp3',
-                cover: home + 'music/退后/cover.jpg',
-                lrc: home + 'music/退后/tuihou.lrc'
-            }]
-          const ap = new APlayer({
-            container: document.getElementById("musicContainer"),
-            fixed: true,
-            theme: "#08a365",
-            listMaxHeight: 90,
-            lrcType: 3,
-            audio: musicArray
-          });
-          
-    </script>
-
-
+<style>
+  body {
+    background: url(https://nishinonanasezz.github.io/background/w1.png) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+</style>
 
     </body>
 </html>
